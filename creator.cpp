@@ -39,4 +39,5 @@ int main(){
     Complex c5{2,3};
 
     cout << "c1=" << c1.GetReal() << "," << c1.GetImag() << endl;
+    cout << "c2=" << c2.GetReal() << "," << c2.GetImag() << endl;
 }
