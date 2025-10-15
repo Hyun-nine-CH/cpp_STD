@@ -11,13 +11,14 @@ int main() {
         cout<<endl;
     }
     
-    for(int(&ln)[3]:arr){ // auto &ln:arr
+    // 범위 기반 for문: 일단 배열에 대한 레퍼런스를 씀
+    for(int(&ln)[3]:arr){ // auto &ln:arr, 레퍼런스 변수 ln
         for(int &col:ln){
             cout<<col<<' ';
         }
         cout<<endl;
     }
-
+    // 배열에 대한 포인터
     for(int(*ln)[3]=arr; ln<arr+2;ln++){
         for(int *c=*ln;c<*ln+3;c++){
             cout<<*c<<' ';
