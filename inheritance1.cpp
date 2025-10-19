@@ -85,3 +85,5 @@ int main(){
     delete cat;
     delete p_catImage;
 }
+
+// 메세지를 보낼 수 있는 요소가 굉장히 많아지면, 수정하게 될 때, 이런 측면에서 클래스 상속은 효율이 좋다.
